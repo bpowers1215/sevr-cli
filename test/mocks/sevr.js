@@ -26,6 +26,11 @@ const CollectionMock = function(def, data) {
 
 		// Mocks --------------------------------------------
 		defaultField: def.defaultField,
+		definition: {
+			getFields(){
+				return def.fields
+			}
+		},
 
 		getFields() { return def.fields },
 
